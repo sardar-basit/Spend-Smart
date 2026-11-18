@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SpendSmart" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_primary</item>
+        <item name="colorOnPrimary">@color/teal_on_primary</item>
+        <item name="colorPrimaryContainer">@color/teal_container</item>
+        <item name="colorOnPrimaryContainer">@color/teal_on_container</item>
+        <item name="colorSecondary">@color/coral_secondary</item>
+        <item name="colorOnSecondary">@color/coral_on_secondary</item>
+        <item name="colorTertiary">@color/amber_tertiary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="materialButtonStyle">@style/Widget.SpendSmart.Button</item>
+        <item name="bottomNavigationStyle">@style/Widget.SpendSmart.BottomNav</item>
+        <item name="toolbarStyle">@style/Widget.SpendSmart.Toolbar</item>
+    </style>
+
+    <style name="Widget.SpendSmart.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/teal_primary</item>
+        <item name="android:textColor">@color/teal_on_primary</item>
+        <item name="cornerRadius">14dp</item>
+    </style>
+
+    <style name="ThemeOverlay.SpendSmart.Toolbar" parent="ThemeOverlay.Material3.Dark.ActionBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.SpendSmart.Popup" parent="ThemeOverlay.Material3.Light">
+        <item name="android:colorBackground">@color/surface</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:textColorPrimary">@color/on_surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorControlNormal">@color/on_surface</item>
+    </style>
+
+    <style name="Widget.SpendSmart.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/teal_primary</item>
+        <item name="android:theme">@style/ThemeOverlay.SpendSmart.Toolbar</item>
+        <item name="popupTheme">@style/ThemeOverlay.SpendSmart.Popup</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/white</item>
+        <item name="navigationIconTint">@color/white</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+
+    <style name="Widget.SpendSmart.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/surface</item>
+        <item name="itemIconTint">@color/bottom_nav_colors</item>
+        <item name="itemTextColor">@color/bottom_nav_colors</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.SpendSmart.BottomNav.ActiveIndicator</item>
+        <item name="elevation">@dimen/bottom_nav_elevation</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="Widget.SpendSmart.BottomNav.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/teal_container</item>
+        <item name="android:width">64dp</item>
+        <item name="android:height">32dp</item>
+    </style>
+
+    <style name="Widget.SpendSmart.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/outline_soft</item>
+    </style>
+</resources>

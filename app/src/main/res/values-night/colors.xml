@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_primary">#4DB6AC</color>
+    <color name="teal_primary_dark">#2A8A82</color>
+    <color name="teal_on_primary">#003D40</color>
+    <color name="teal_container">#004D40</color>
+    <color name="teal_on_container">#B2DFDB</color>
+    <color name="coral_secondary">#FF8A80</color>
+    <color name="coral_on_secondary">#410002</color>
+    <color name="income_soft">#163528</color>
+    <color name="expense_soft">#3A1A1A</color>
+    <color name="background_light">#0E1212</color>
+    <color name="on_background">#E6EAEA</color>
+    <color name="surface">#171C1C</color>
+    <color name="on_surface">#E6EAEA</color>
+    <color name="surface_variant">#2A3232</color>
+    <color name="on_surface_variant">#A8B3B3</color>
+    <color name="outline_soft">#2F3838</color>
+</resources>
